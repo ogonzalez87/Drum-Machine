@@ -21,7 +21,7 @@ class App extends React.Component {
         <div id="display"></div>
         <div id="drum-pad" className="grid">
           {keys.map(k =>{
-            return <div className= ' drum-pad text-center p-2'key= {k}>{k}</div>
+            return <div className= ' drum-pad text-center p-2'key= {k} id = {k}>{k}</div>
           })}
           
         </div>

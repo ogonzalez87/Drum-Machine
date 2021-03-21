@@ -7,7 +7,8 @@
 }
 .drum-pad {
   background-color:silver;
-  
+  box-shadow: 5px 5px 8px 2px #888888;
+  border-style: outset;
 }
 .bg-red{
   background-color: red;
