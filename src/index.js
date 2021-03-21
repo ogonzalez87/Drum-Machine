@@ -1,17 +1,35 @@
-import React from 'react';
+import React   from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ 
+class App extends React.Component {
+  render() {
+    const keys = [
+      "Q", 
+      "W", 
+      "E", 
+      "A", 
+      "S", 
+      "D", 
+      "Z", 
+      "X", 
+      "C"
+    ];
+    return (
+      <div id="drum-machine" className = 'd-flex justify-content-center align-items-center vh-100'>
+        <div id="display"></div>
+        <div id="drum-pad" className="grid">
+          {keys.map(k =>{
+            return <div className= ' drum-pad text-center p-2'key= {k}>{k}</div>
+          })}
+          
+        </div>
+        
+        
+      </div>
+    );
+  }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(<App />, document.getElementById("root"));
