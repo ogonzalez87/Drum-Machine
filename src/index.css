@@ -1,14 +1,21 @@
+body{
+  background-color: #ffeaa7;
+}
 .grid{
   display: grid;
   ;
-  grid-template-columns: repeat(3,40px);
-  grid-template-rows:repeat(3,40px);
+  grid-template-columns: repeat(3,auto);
+  grid-template-rows:repeat(3,auto);
   grid-gap: 1rem;  
 }
 .drum-pad {
   background-color:silver;
   box-shadow: 5px 5px 8px 2px #888888;
   border-style: outset;
+  width: 150px;
+  height: 150px;
+  font-size: 40px;
+  cursor: pointer;
 }
 .bg-red{
   background-color: red;
