@@ -20,3 +20,6 @@ body{
 .bg-red{
   background-color: red;
 }
+.active{
+  transform: scale(0.8)
+}
